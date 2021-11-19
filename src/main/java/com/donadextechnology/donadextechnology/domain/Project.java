@@ -84,7 +84,7 @@ public class Project {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Project project = (Project) o;
-        return id == project.id;
+        return Objects.equals(id, project.id);
     }
 
     @Override
